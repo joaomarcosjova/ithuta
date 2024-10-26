@@ -24,7 +24,7 @@ export function Metrics({ children }: PropsWithChildren) {
     <section className="pb-8 pt-16 md:py-20">
       <AnimatedTitle>
         <h2 className="heading-section">
-          <span className="text-primary">Lingo</span> by the{' '}
+          <span className="text-primary">Ithuta</span> by the{' '}
           <span className="text-secondary underline decoration-wavy underline-offset-4 md:underline-offset-8">
             numbers
           </span>
@@ -34,7 +34,7 @@ export function Metrics({ children }: PropsWithChildren) {
         <li className="sticky top-[20%] col-start-2 col-end-12 pb-8 sm:col-start-3 sm:col-end-8 sm:pb-16 lg:top-[5%] lg:pb-40">
           <MetricsItem
             className="bg-primary-light"
-            number={1000}
+            number={1500}
             description="hours of fun content"
             offset={20}
             progress={scrollYProgress}
@@ -46,7 +46,7 @@ export function Metrics({ children }: PropsWithChildren) {
           <MetricsItem
             className="bg-secondary"
             number={23}
-            description="language courses"
+            description="tech courses"
             offset={22.5}
             progress={scrollYProgress}
           >
@@ -56,8 +56,8 @@ export function Metrics({ children }: PropsWithChildren) {
         <li className="sticky top-[25%] col-start-2 col-end-12 pb-8 sm:col-start-6 sm:col-end-10 sm:pb-16 lg:pb-40">
           <MetricsItem
             className="bg-highlight"
-            number={6}
-            prefix="~"
+            number={2}
+            prefix="+"
             suffix="M"
             description="users globally"
             offset={25}
@@ -71,7 +71,7 @@ export function Metrics({ children }: PropsWithChildren) {
             className="bg-gradient-to-b from-primary to-primary-depth to-80%"
             number={93}
             suffix="%"
-            description="fluency in two months"
+            description="chances of getting hired"
             offset={20}
             progress={scrollYProgress}
             last

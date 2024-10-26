@@ -42,7 +42,7 @@ export function Reasons() {
         </li>
         <li>
           <ReasonsItem
-            reason="Use Lingo wherever you go"
+            reason="Use Ithuta wherever you go"
             className="bg-primary-light/60 text-primary-depth hover:bg-primary-light/40 dark:hover:bg-primary-light"
             delay={0.4}
           >
