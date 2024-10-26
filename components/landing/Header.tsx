@@ -13,7 +13,7 @@ export function Header() {
         <div className="flex flex-1 items-center justify-start gap-1 max-sm:hidden">
           <Button variant="ghost" size="icon" asChild>
             <a
-              href="https://github.com/elitenoire/trylingo"
+              href="https://github.com/joaomarcosjova"
               target="_blank"
               aria-label="GitHub repo"
               title="Github repo"
@@ -29,7 +29,7 @@ export function Header() {
           title="Lingo app"
         >
           <LogoSVG className="w-[1.5em] group-hover:animate-bounce" />
-          <span className="font-display -tracking-widest max-sm:sr-only">Lingo</span>
+          <span className="font-display -tracking-widest max-sm:sr-only">Ithuta</span>
         </NextLink>
         <div className="flex flex-1 items-center justify-end">
           <ClerkLoaded>

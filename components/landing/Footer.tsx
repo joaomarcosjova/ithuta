@@ -56,7 +56,7 @@ export function Footer() {
           </div>
           <a
             className="flex items-center justify-end px-4 py-2 text-center font-semibold uppercase opacity-70 before:content-['@_'] after:content-['_*'] hover:opacity-100 sm:px-12 md:py-4 lg:text-2xl"
-            href="https://github.com/elitenoire/trylingo"
+            href="https://github.com/joaomarcosjova"
             target="_blank"
           >
             Github
@@ -65,7 +65,7 @@ export function Footer() {
         <div className="flex-grow select-none overflow-hidden">
           <AnimatedTitle className="md:absolute md:-bottom-1/4 md:left-0 md:translate-x-0">
             <p className="pr-6 font-display text-[min(37vw,300px)] -tracking-widest dark:text-card-foreground">
-              Lingo
+              Ithutha
             </p>
           </AnimatedTitle>
           <MotionDiv
@@ -98,23 +98,14 @@ export function Footer() {
         </ClerkLoaded>
       </MotionDiv>
       <p className="text-center max-sm:text-sm">
-        © 2024 — Lingo by{' '}
+        © 2024 — Ithuta by {' '}
         <a
-          href="https://github.com/elitenoire"
+          href="https://kadoshsoftwares.com"
           target="_blank"
           className="font-semibold decoration-dotted transition hover:underline"
         >
-          @elitenoire
-        </a>{' '}
-        +{' '}
-        <a
-          href="https://www.youtube.com/@codewithantonio"
-          target="_blank"
-          className="font-semibold decoration-dotted transition hover:underline"
-        >
-          @CodeWithAntonio
-        </a>
-        .
+          Kadosh Softwares
+        </a>.
       </p>
       <p className="text-center text-2xl">{`{◕ ◡ ◕}`}</p>
     </footer>

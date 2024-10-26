@@ -1,23 +1,30 @@
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 
-const isAdminRoute = createRouteMatcher(['/admin(.*)'])
-const isPublicRoute = createRouteMatcher(['/', '/buttons'])
+// Route matchers for specific paths
+const isAdminRoute = createRouteMatcher(['/admin(.*)']);
+const isPublicRoute = createRouteMatcher(['/', '/buttons']);
 
+// Main Clerk middleware with custom route protection
 export default clerkMiddleware(
   (auth, req) => {
-    // strategy to protect all routes except public routes
-    if (isPublicRoute(req)) return // if it's a public route, do nothing
+    if (isPublicRoute(req)) return; // Public routes require no auth
 
-    // Restrict admin route to users with specific role
-    if (isAdminRoute(req)) auth().protect({ role: 'org:admin' })
-
-    auth().protect() // for any other route, require auth
+    if (isAdminRoute(req)) {
+      // Restrict admin route to users with 'org:admin' role
+      auth().protect({ role: 'org:admin' });
+    } else {
+      auth().protect(); // Require auth for all other routes
+    }
   },
   { debug: process.env.NODE_ENV !== 'production' }
-)
+);
 
+// Configuration for matching routes where middleware is applied
 export const config = {
-  // The following matcher runs middleware on all routes
-  // except static assets.
-  matcher: ['/((?!.*\\..*|_next).*)', '/', '/(api|trpc)(.*)'],
-}
+  matcher: [
+    // Run middleware on all routes except static assets
+    '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
+    '/',                     // Root path
+    '/(api|trpc)(.*)',       // API and TRPC routes
+  ],
+};

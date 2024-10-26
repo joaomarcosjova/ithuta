@@ -48,10 +48,10 @@ export function Languages() {
                   className="!top-1/2 mx-auto h-1/2 w-1/2 -translate-y-1/2"
                 >
                   <NextImage
-                    src={`/img/flags/${flag}.svg`}
+                    src={`/img/flags/${flag}.png`}
                     alt={`${title} flag`}
                     fill
-                    className="rounded-md object-cover"
+                    className="rounded-md"
                   />
                 </AspectRatio>
                 <span>{title}</span>
