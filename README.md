@@ -56,3 +56,12 @@ Key Features:
 - Logo, Illustrations are from [Freepik, Rawpixel](https://www.freepik.com/)
 - Banner Branding - Nagoda font
 - Google Fonts - Gabarito, Capriola
+
+More assets
+
+Clerk: https://clerk.com/
+Kenney Assets:https://kenney.nl/
+Freesound: https://freesound.org/
+Elevenlabs AI: https://elevenlabs.io/
+Flagpack: https://flagpack.xyz/
+Icons: https://iconduck.com/licenses/mit

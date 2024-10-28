@@ -1,5 +1,10 @@
 export const languages = [
   {
+    title: 'Excel',
+    flag: 'excel',
+    word: 'Hallo',
+  },
+  {
     title: 'HTML',
     flag: 'html',
     word: 'Hello',
@@ -30,18 +35,14 @@ export const languages = [
     word: 'Nǐ hǎo',
   },
   {
-    title: 'Git',
-    flag: 'gitlab',
-    word: 'Ciao',
+    title: 'Swift',
+    flag: 'swift',
+    word: 'swift',
   },
   {
-    title: 'SQL',
-    flag: 'sql',
+    title: 'Kotlin',
+    flag: 'kotlin',
     word: 'Привет',
   },
-  {
-    title: 'Cybersecurity',
-    flag: 'cybersecurity',
-    word: 'Hallo',
-  },
+
 ]
