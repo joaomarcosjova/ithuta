@@ -18,7 +18,7 @@ export function SideMenu() {
           </span>
           <span className="sm:max-lg:hidden">
             <span className="font-display text-3xl font-bold -tracking-wide text-primary">
-              Lingo
+              Ithuta
             </span>
           </span>
         </NextLink>
@@ -26,7 +26,10 @@ export function SideMenu() {
           <SideMenuItem href="/learn" icon="learn" label="Learn" />
           <SideMenuItem href="/leaderboard" icon="leaderboard" label="Leaderboard" />
           <SideMenuItem href="/quests" icon="quests" label="Quests" />
+          <SideMenuItem href="/jobs" icon="job" label="Get Hired" />
+          <SideMenuItem href="/certificates" icon="certificates" label="Certificates" />
           <SideMenuItem href="/shop" icon="shop" label="Shop" />
+          <SideMenuItem href="/support" icon="support" label="Support" />
         </ul>
       </nav>
       <div className="space-y-2 border-t-2 px-4 pb-2 pt-2 sm:max-lg:px-2">

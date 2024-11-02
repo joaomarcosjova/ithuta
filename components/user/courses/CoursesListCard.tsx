@@ -52,7 +52,7 @@ export function CoursesListCard({ activeId, course }: CoursesListCardProps) {
             src={`/img/flags/${altCode}.svg`}
             alt={`${title} flag`}
             fill
-            className="rounded-md border object-cover drop-shadow-md"
+            className="rounded-md drop-shadow-md"
           />
         </AspectRatio>
         <span>{title}</span>

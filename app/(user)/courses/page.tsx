@@ -8,7 +8,7 @@ export default async function Courses() {
 
   return (
     <div className="mx-auto w-full max-w-[912px] space-y-6">
-      <h1 className="font-display text-2xl font-bold">Language Courses</h1>
+      <h1 className="font-display text-2xl font-bold">Learn a skill</h1>
       <CoursesList courses={courses} activeId={userProgress?.activeCourseId} />
     </div>
   )
