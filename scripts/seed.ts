@@ -22,24 +22,65 @@ const main = async () => {
     await db.insert(schema.courses).values([
       {
         id: 1,
-        title: 'Spanish',
-        altCode: 'es',
+        title: 'HTML',
+        altCode: 'html',
       },
       {
         id: 2,
-        title: 'Italian',
-        altCode: 'it',
+        title: 'CSS',
+        altCode: 'css',
       },
       {
         id: 3,
-        title: 'French',
-        altCode: 'fr',
+        title: 'JavaScript',
+        altCode: 'js',
       },
       {
         id: 4,
-        title: 'German',
-        altCode: 'de',
+        title: 'Python',
+        altCode: 'python',
       },
+      {
+        id: 5,
+        title: 'Excel',
+        altCode: 'excel',
+      },
+      {
+        id: 6,
+        title: 'ReactJs',
+        altCode: 'react',
+      },
+      {
+        id: 7,
+        title: 'Swift',
+        altCode: 'swift',
+      },
+      {
+        id: 8,
+        title: 'Kotlin',
+        altCode: 'kotlin',
+      },
+      {
+        id: 9,
+        title: 'NodeJs',
+        altCode: 'node',
+      },
+      {
+        id: 10,
+        title: 'TypeScript',
+        altCode: 'typescript',
+      },
+      {
+        id: 11,
+        title: 'Java',
+        altCode: 'java',
+      },
+      {
+        id: 12,
+        title: 'Cybersec',
+        altCode: 'cybersec',
+      },
+    
     ])
 
     await db.insert(schema.units).values([
