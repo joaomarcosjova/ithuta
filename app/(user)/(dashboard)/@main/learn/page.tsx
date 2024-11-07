@@ -25,9 +25,9 @@ export default async function Learn() {
   const { activeLessonId } = courseProgress ?? {}
 
   // - comment later and try to fix this bug.
-  // if (!activeCourse || !activeLessonId) {
-  //   redirect('/courses')
-  // }
+  if (!activeCourse || !activeLessonId) {
+    redirect('/courses')
+  }
 
   const [units, percentage] = await Promise.all([unitsPromise, lessonPercentagePromise])
 
