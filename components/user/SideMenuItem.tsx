@@ -24,7 +24,7 @@ export function SideMenuItem({ href, icon, label, hideLabel }: SideMenuItemProps
         asChild
       >
         <NextLink href={href} title={label} {...(hideLabel && { 'aria-label': label })}>
-          <span className="relative block size-10">
+          <span className="relative block size-8">
             <NextImage
               className="object-cover"
               src={`/img/icons/${icon}.svg`}
