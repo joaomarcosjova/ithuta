@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { MobileSheet } from '@/components/user/MobileSheet'
 import { SideMenu } from '@/components/user/SideMenu'
-import { Promo } from '@/components/user/Promo'
+import { Promo } from '@/components/user/GoPremium'
 
 
 

@@ -25,11 +25,11 @@ export function SideMenu() {
         <ul className="flex flex-col gap-y-2">
           <SideMenuItem href="/learn" icon="learn" label="Learn" />
           <SideMenuItem href="/leaderboard" icon="leaderboard" label="Leaderboard" />
-          <SideMenuItem href="/quests" icon="quests" label="Quests" />
+          <SideMenuItem href="/quests" icon="quests" label="Challenges" />
           <SideMenuItem href="/jobs" icon="job" label="Get Hired" />
           <SideMenuItem href="/certificates" icon="certificates" label="Certificates" />
-          {/* <SideMenuItem href="/shop" icon="shop" label="Shop" /> */}
-          <SideMenuItem href="/support" icon="support" label="Support" />
+          <SideMenuItem href="/shop" icon="shop" label="Go Premium" />
+          {/* <SideMenuItem href="/support" icon="support" label="Support" /> */}
         </ul>
       </nav>
       <div className="space-y-2 border-t-2 px-4 pb-2 pt-2 sm:max-lg:px-2">
