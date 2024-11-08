@@ -98,7 +98,7 @@ export function Footer() {
         </ClerkLoaded>
       </MotionDiv>
       <p className="text-center max-sm:text-sm">
-        © 2024 — Ithuta by {' '}
+        © Ithuta by {' '}
         <a
           href="https://kadoshsoftwares.com"
           target="_blank"

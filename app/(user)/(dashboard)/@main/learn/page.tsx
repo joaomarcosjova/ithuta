@@ -24,7 +24,6 @@ export default async function Learn() {
   const { activeCourse } = userProgress ?? {}
   const { activeLessonId } = courseProgress ?? {}
 
-  // - comment later and try to fix this bug.
   if (!activeCourse || !activeLessonId) {
     redirect('/courses')
   }

@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/theme/toggle'
 
 import LogoSVG from '@/public/logo.svg'
-import GithubSVG from '@/public/img/github.svg'
+import LocationSVG from '@/public/img/location.svg'
 
 export function Header() {
   return (
@@ -18,7 +18,7 @@ export function Header() {
               aria-label="GitHub repo"
               title="Github repo"
             >
-              <GithubSVG className="size-6" />
+              <LocationSVG className="size-6" />
             </a>
           </Button>
           <ThemeToggle />
