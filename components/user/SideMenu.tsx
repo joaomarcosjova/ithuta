@@ -28,7 +28,7 @@ export function SideMenu() {
           <SideMenuItem href="/quests" icon="quests" label="Quests" />
           <SideMenuItem href="/jobs" icon="job" label="Get Hired" />
           <SideMenuItem href="/certificates" icon="certificates" label="Certificates" />
-          <SideMenuItem href="/shop" icon="shop" label="Shop" />
+          {/* <SideMenuItem href="/shop" icon="shop" label="Shop" /> */}
           <SideMenuItem href="/support" icon="support" label="Support" />
         </ul>
       </nav>
