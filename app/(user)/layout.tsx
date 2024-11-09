@@ -27,6 +27,7 @@ export default function UserLayout({ children, userProgress }: UserLayoutProps) 
       <main className="flex flex-1 flex-row gap-6 px-6 pb-24 pt-6 sm:pb-6 lg:gap-12">
         {children}
       </main>
+      <Promo />
     </div>
   )
 }
