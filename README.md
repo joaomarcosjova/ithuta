@@ -1,67 +1,81 @@
-<div align="center">
-    <a href="https://lingoapp.vercel.app">
-        <img width="600" src="./public/gh-cover.svg" alt="Lingo brand banner" title="Lingo - a duolingo clone" />
-    </a>
+# Lingo
 
-## Duolingo Code-Along with Antonio.
+Lingo aims to provide a super interactive and user-friendly platform for learning languages, regardless of your proficiency. Whether you’re just starting out or aiming to perfect your skills, this web app is loaded with features to make your language learning journey both enjoyable and effective. Dive in and discover a whole new way to learn!
 
-</div>
+## Screenshot
 
-<!-- Add badges here -->
-<div align="center">
-  <a href="https://nextjs.org" title="Visit Next.js" target="_blank">
-    <img alt="Next.js" src="https://img.shields.io/badge/-NEXTJS-black?style=for-the-badge&logo=Next.js" />
-  </a>
-  <a href="https://typescriptlang.org" title="More Typescript" target="_blank">
-    <img alt="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-  </a>
-  </a>
-    <a href="https://www.buymeacoffee.com/elitenoire" title="Support Me" target="_blank">
-    <img alt="Donation" src="https://img.shields.io/badge/Buy_Me_A_Coffee-22CC5E?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white" />
-  </a>
-</div>
+<img src="./screenshot.png">
 
----
+<p align="center">
+  <a href="https://lingo.nabarun.app"><strong>View Project »</strong></a>
+</p>
 
-"Build a Duolingo Clone With Nextjs, React, Drizzle, Stripe (2024)" youtube video.
+## Running Locally
 
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=dP75Khfy4s4)
+This application requires Node.js v20.12.1+.
 
-Key Features:
+### Cloning the repository to the local machine:
 
-- 🌐 Next.js 14 & server actions
-- 🗣 AI Voices using Elevenlabs AI
-- 🎨 Beautiful component system using Shadcn UI
-- 🎭 Amazing characters thanks to KenneyNL
-- 🔐 Auth using Clerk
-- 🔊 Sound effects
-- ❤️ Hearts system
-- 🌟 Points / XP system
-- 💔 No hearts left popup
-- 🚪 Exit confirmation popup
-- 🔄 Practice old lessons to regain hearts
-- 🏆 Leaderboard
-- 🗺 Quests milestones
-- 🛍 Shop system to exchange points with hearts
-- 💳 Pro tier for unlimited hearts using Stripe
-- 🏠 Landing page
-- 📊 Admin dashboard React Admin
-- 🌧 ORM using DrizzleORM
-- 💾 PostgresDB using NeonDB
-- 🚀 Deployment on Vercel
-- 📱 Mobile responsiveness
+```bash
+git clone https://github.com/nabarvn/lingo.git
+cd lingo
+```
 
-### 💯 Credits
+### Installing the dependencies:
 
-- Logo, Illustrations are from [Freepik, Rawpixel](https://www.freepik.com/)
-- Banner Branding - Nagoda font
-- Google Fonts - Gabarito, Capriola
+```bash
+pnpm install
+```
 
-More assets
+### Setting up the `.env` file:
 
-Clerk: https://clerk.com/
-Kenney Assets:https://kenney.nl/
-Freesound: https://freesound.org/
-Elevenlabs AI: https://elevenlabs.io/
-Flagpack: https://flagpack.xyz/
-Icons: https://iconduck.com/licenses/mit
+```bash
+cp .env.example .env
+```
+
+> [!IMPORTANT]
+> Ensure you populate the variables with your respective API keys and configuration values before proceeding.
+
+### Configuring Drizzle:
+
+```bash
+pnpm db:push
+```
+
+### Seeding the application:
+
+```bash
+pnpm db:seed
+```
+
+### Running the application:
+
+```bash
+pnpm dev
+```
+
+## Tech Stack
+
+- **Language**: [TypeScript](https://www.typescriptlang.org)
+- **Framework**: [Next.js](https://nextjs.org)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com)
+- **Analytics**: [Vercel Analytics](https://vercel.com/analytics)
+- **State Management**: [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
+- **ORM Toolkit**: [Drizzle](https://orm.drizzle.team/docs/overview)
+- **Postgres Database**: [Neon](https://neon.tech/docs/introduction/about)
+- **Authentication**: [Clerk](https://clerk.com/docs/quickstarts/nextjs)
+- **Payments**: [Stripe](https://stripe.com/docs/payments)
+- **Deployment**: [Vercel](https://vercel.com)
+
+## Acknowledgements
+
+- **Speech Generator**: [ElevenLabs](https://elevenlabs.io)
+- **Character Assets**: [Kenney](https://kenney.nl/assets/toon-characters-1)
+
+## Credits
+
+Huge props to Antonio for coming up with such an incredible tutorial. Knowledge packed content, as always!
+
+<hr />
+
+<div align="center">Don't forget to leave a STAR 🌟</div>

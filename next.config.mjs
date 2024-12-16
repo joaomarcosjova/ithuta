@@ -1,49 +1,30 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack(config) {
-    // Grab the existing rule that handles SVG imports
-    const fileLoaderRule = config.module.rules.find((rule) => rule.test?.test?.('.svg'))
-
-    config.module.rules.push(
-      // Reapply the existing rule, but only for svg imports ending in ?url
+  async headers() {
+    return [
       {
-        ...fileLoaderRule,
-        test: /\.svg$/i,
-        resourceQuery: /url/, // *.svg?url
-      },
-      // Convert all other *.svg imports to React components
-      {
-        test: /\.svg$/i,
-        issuer: fileLoaderRule.issuer,
-        resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] }, // exclude if *.svg?url
-        use: [
+        source: "/api/(.*)",
+        headers: [
           {
-            loader: '@svgr/webpack',
-            options: {
-              svgProps: {
-                fill: 'currentcolor',
-              },
-            },
+            key: "Access-Control-Allow-Origin",
+            value: process.env.NEXT_PUBLIC_ALLOWED_ORIGIN,
+          },
+          {
+            key: "Access-Control-Allow-Methods",
+            value: "GET, POST, PUT, DELETE, OPTIONS",
+          },
+          {
+            key: "Access-Control-Allow-Headers",
+            value: "Content-Type, Authorization",
+          },
+          {
+            key: "Content-Range",
+            value: "bytes : 0-9/*",
           },
         ],
-      }
-    )
-
-    // Modify the file loader rule to ignore *.svg, since we have it handled now.
-    fileLoaderRule.exclude = /\.svg$/i
-
-    return config
+      },
+    ];
   },
+};
 
-  // ...other config
-  experimental: {
-    typedRoutes: true,
-  },
-  logging: {
-    fetches: {
-      fullUrl: true,
-    },
-  },
-}
-
-export default nextConfig
+export default nextConfig;
