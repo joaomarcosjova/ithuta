@@ -25,7 +25,7 @@ const Sidebar = async ({ className }: SidebarProps) => {
           <Image src="/mascot.svg" height={40} width={40} alt="Mascot" />
 
           <h1 className="text-3xl font-extrabold tracking-wide text-green-600">
-            Lingo
+            Ithuta
           </h1>
         </div>
       </Link>

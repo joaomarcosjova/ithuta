@@ -7,8 +7,8 @@ const Loading = () => {
         <Loader2 className="h-8 w-8 text-green-600 animate-spin" />
 
         <div className="flex flex-col items-center gap-1">
-          <h3 className="font-semibold text-xl">Processing...</h3>
-          <p className="text-zinc-500 text-sm">This won&apos;t take long.</p>
+          <h3 className="font-semibold text-xl">Processando...</h3>
+          <p className="text-zinc-500 text-sm">Aguarde um pouco. 😎</p>
         </div>
       </div>
     </div>

@@ -28,23 +28,23 @@ const main = async () => {
     await db.insert(schema.courses).values([
       {
         id: 1,
-        title: "Spanish",
-        imageSrc: "/es.svg",
+        title: "Python",
+        imageSrc: "/python.svg",
       },
       {
         id: 2,
-        title: "Italian",
-        imageSrc: "/it.svg",
+        title: "HTML",
+        imageSrc: "/html.svg",
       },
       {
         id: 3,
-        title: "French",
-        imageSrc: "/fr.svg",
+        title: "CSS",
+        imageSrc: "/css.svg",
       },
       {
         id: 4,
-        title: "Croatian",
-        imageSrc: "/hr.svg",
+        title: "JavaScript",
+        imageSrc: "/javascript.svg",
       },
     ]);
 
@@ -52,8 +52,8 @@ const main = async () => {
       {
         id: 1,
         courseId: 1,
-        title: "Unit 1",
-        description: "Learn the basics of Spanish",
+        title: "Unidade 1",
+        description: "Introdução a programação",
         order: 1,
       },
     ]);
