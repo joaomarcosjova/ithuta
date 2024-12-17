@@ -23,7 +23,7 @@ const UpgradeButton = ({ isMobile }: UpgradeButtonProps) => {
             window.location.href = response.data;
           }
         })
-        .catch(() => toast.error("Something went wrong."));
+        .catch(() => toast.error("Algo deu errado ⚠"));
     });
   };
 
