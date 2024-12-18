@@ -37,7 +37,7 @@ const UpgradeButton = ({ isMobile }: UpgradeButtonProps) => {
       disabled={pending}
       className="w-full"
     >
-      Seja parte dos pros
+      Teste 7 dias grátis
     </Button>
   );
 };

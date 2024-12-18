@@ -52,18 +52,18 @@ const LeaderboardPage = async () => {
       <FeedWrapper>
         <div className="flex flex-col items-center w-full mt-7">
           <Image
-            src="/leaderboard.svg"
+            src="/leaderboard-1.svg"
             alt="Leaderboard"
-            height={90}
-            width={90}
+            height={125}
+            width={125}
           />
 
           <h1 className="text-center font-bold text-neutral-800 text-2xl my-6">
-            Leaderboard
+            Liga
           </h1>
 
           <p className="text-muted-foreground text-center text-balance text-lg mb-6">
-            See where you stand among other learners in the community.
+          Descubra sua posição na comunidade e avance para o topo!
           </p>
 
           <Separator className="mb-4 h-0.5 rounded-full" />

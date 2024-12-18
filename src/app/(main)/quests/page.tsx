@@ -37,11 +37,11 @@ const QuestsPage = async () => {
           <Image src="/quests.svg" alt="Quests" height={90} width={90} />
 
           <h1 className="text-center font-bold text-neutral-800 text-2xl my-6">
-            Quests
+            Missões diarias
           </h1>
 
           <p className="text-muted-foreground text-center text-balance text-lg mb-6">
-            Complete quests by earning points.
+          Ganhe recompensas ao completar missões.
           </p>
 
           <ul className="w-full">

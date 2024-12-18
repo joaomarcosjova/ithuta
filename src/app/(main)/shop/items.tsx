@@ -47,7 +47,7 @@ const Items = ({ hearts, points, hasActiveSubscription }: ItemsProps) => {
 
         <div className="flex-1">
           <p className="text-neutral-700 text-base lg:text-xl font-bold">
-            Refill hearts
+            Recuperar vidas
           </p>
         </div>
 
@@ -61,7 +61,7 @@ const Items = ({ hearts, points, hasActiveSubscription }: ItemsProps) => {
           }
         >
           {hearts === DEFAULT_HEARTS_MAX ? (
-            "full"
+            "cheio"
           ) : (
             <div className="flex items-center">
               <Image src="/points.svg" alt="Points" height={20} width={20} />
@@ -76,12 +76,12 @@ const Items = ({ hearts, points, hasActiveSubscription }: ItemsProps) => {
 
         <div className="flex-1">
           <p className="text-neutral-700 text-base lg:text-xl font-bold">
-            Unlimited hearts
+            Vidas ilimitadas
           </p>
         </div>
 
         <Button size="sm" onClick={onUpgrade} disabled={pending}>
-          {hasActiveSubscription ? "settings" : "upgrade"}
+          {hasActiveSubscription ? "settings" : "Desbloquear"}
         </Button>
       </div>
     </ul>

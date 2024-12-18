@@ -12,11 +12,11 @@ type QuestsProps = {
 const Quests = ({ points }: QuestsProps) => (
   <div className="border-2 rounded-xl space-y-4 p-4">
     <div className="flex items-center justify-between w-full">
-      <h3 className="font-bold text-lg">Quests</h3>
+      <h3 className="font-bold text-lg">Missões do dia</h3>
 
       <Link href="/quests">
         <Button size="sm" variant="primaryOutline">
-          View all
+          Ver todas
         </Button>
       </Link>
     </div>
