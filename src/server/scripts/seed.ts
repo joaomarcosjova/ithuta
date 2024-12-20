@@ -95,9 +95,9 @@ const main = async () => {
       {
         id: 1,
         lessonId: 1,
-        type: "SELECT",
+        type: "ASSIST",
         order: 1,
-        question: 'Which one of these is the "the man"?',
+        question: 'Python é uma linguagem incrível que muitas empresas usam e também é perfeita para projetos pessoais. Com ele, você pode fazer coisas super úteis, como automatizar tarefas chatas, analisar dados para descobrir tendências ou até criar algo divertido, como um recomendador de filmes. É fácil de aprender, poderoso e cheio de possibilidades para soltar sua criatividade na tecnologia! 🚀',
       },
       {
         id: 2,

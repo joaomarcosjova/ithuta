@@ -212,7 +212,7 @@ const Quiz = ({
           />
 
           <h1 className="text-xl lg:text-3xl font-bold text-neutral-700">
-            Great job! <br /> You&apos;ve completed the lesson.
+          Ótimo trabalho! <br /> Você concluiu a lição.
           </h1>
 
           <div className="flex items-center gap-x-4 w-full">
